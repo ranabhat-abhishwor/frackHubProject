@@ -1,0 +1,16 @@
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Repositories.deps.json
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Repositories.runtimeconfig.json
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Repositories.runtimeconfig.dev.json
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Repositories.dll
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Repositories.pdb
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Entities.dll
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\bin\Debug\netcoreapp3.1\FrackerHub.Entities.pdb
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.csproj.AssemblyReference.cache
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.AssemblyInfoInputs.cache
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.AssemblyInfo.cs
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.csproj.CopyComplete
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.dll
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.pdb
+C:\Users\basha\source\repos\FrackerHubProject\FrackerHub.Repositories\obj\Debug\netcoreapp3.1\FrackerHub.Repositories.genruntimeconfig.cache
