@@ -23,6 +23,22 @@ namespace FrackerHub.Services.Implementations
             _roleManager   = roleManager;
         }
 
+        public int CountAllUsers()
+        {
+            int TotalUsers = 0;
+            try
+            {
+                TotalUsers = _userManager.Users.Count();
+            }
+            catch (Exception ex)
+            {
+                // ex.Message;
+                return TotalUsers;
+            }
+
+            return TotalUsers;
+        }
+
         public User AuthenticateUser(string userName, string password)
         {
             var result = _signinManager.PasswordSignInAsync(userName, password, false, lockoutOnFailure: false).Result;
@@ -45,10 +61,11 @@ namespace FrackerHub.Services.Implementations
         public bool CreateUser(User user, string password)
         {
             var result = _userManager.CreateAsync(user, password).Result;
+            
 
             if (result.Succeeded)
             {
-                string role = "Admin";
+                string role = "User";
 
                 var res = _userManager.AddToRoleAsync(user,role).Result;
                 if (res.Succeeded)

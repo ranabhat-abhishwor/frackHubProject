@@ -16,5 +16,8 @@ namespace FrackerHub.Services.Interfaces
 
         User GetUser(string userName);
 
+        int CountAllUsers();
+
+
     }
 }

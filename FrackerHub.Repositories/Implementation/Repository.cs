@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace FrackerHub.Repositories.Implementation
@@ -33,22 +34,40 @@ namespace FrackerHub.Repositories.Implementation
 
         public TEntity Find(object Id)
         {
-            throw new NotImplementedException();
+            return _dbContext.Set<TEntity>().Find(Id);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            // _dbContext.
+            return _dbContext.Set<TEntity>().ToList();
         }
 
         public void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+             _dbContext.Set<TEntity>().Remove(entity);
+        }
+
+        //public void Update(TEntity entity)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        public int SaveChanges(TEntity entity)
+        {
+            return _dbContext.SaveChanges();
+
+        }
+
+        public int SaveChanges()
+        {
+            return _dbContext.SaveChanges();
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<TEntity>().Update(entity);
+
         }
     }
 }

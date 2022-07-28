@@ -1,5 +1,7 @@
 ﻿using FrackerHub.Entities;
 using FrackerHub.Repositories;
+using FrackerHub.Repositories.Implementation;
+using FrackerHub.Repositories.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +28,14 @@ namespace FrackerHub.Services.Configuration
             services.AddIdentity<User, Role>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
             services.AddScoped<DbContext, AppDbContext>();
+
+            services.AddTransient<IRepository<Item>, Repository<Item>>();
+            services.AddTransient<IRepository<Category>, Repository<Category>>();
+            services.AddTransient<IRepository<ItemType>, Repository<ItemType>>();
+            services.AddTransient<IRepository<Asset>, Repository<Asset>>();
+            services.AddTransient<IRepository<UserItem>, Repository<UserItem>>();
+
+
         }
     }
 }

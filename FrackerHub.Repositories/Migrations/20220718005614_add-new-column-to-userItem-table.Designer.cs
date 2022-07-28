@@ -4,14 +4,16 @@ using FrackerHub.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FrackerHub.Repositories.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220718005614_add-new-column-to-userItem-table")]
+    partial class addnewcolumntouserItemtable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -134,9 +136,6 @@ namespace FrackerHub.Repositories.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("Approved")
-                        .HasColumnType("int");
-
                     b.Property<string>("BRP_No")
                         .HasColumnType("nvarchar(max)");
 
@@ -226,10 +225,12 @@ namespace FrackerHub.Repositories.Migrations
                     b.Property<decimal>("UnitPrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("UserLogin")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("UserLoginId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserLoginId");
 
                     b.ToTable("UserItems");
                 });
@@ -352,6 +353,15 @@ namespace FrackerHub.Repositories.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("ItemType");
+                });
+
+            modelBuilder.Entity("FrackerHub.Entities.UserItem", b =>
+                {
+                    b.HasOne("FrackerHub.Entities.User", "UserLogin")
+                        .WithMany()
+                        .HasForeignKey("UserLoginId");
+
+                    b.Navigation("UserLogin");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

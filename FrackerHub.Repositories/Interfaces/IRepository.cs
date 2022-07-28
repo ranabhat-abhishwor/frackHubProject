@@ -13,5 +13,7 @@ namespace FrackerHub.Repositories.Interfaces
         void Remove(TEntity entity);
         void Delete(object Id);
 
+        int SaveChanges();
+
     }
 }

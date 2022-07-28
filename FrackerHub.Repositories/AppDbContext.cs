@@ -20,17 +20,24 @@ namespace FrackerHub.Repositories
 
         }
         public DbSet<Asset> Assets { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Item> Items { get; set; }
+        public DbSet<ItemType> ItemTypes { get; set; }
+        public DbSet<UserItem> UserItems { get; set; }
+
+
 
         //public DbSet<Status_definitions> Status_definition { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            //{
-            //    optionsBuilder.UseSqlServer(@"data source=.; initial catalog=FrackHub; integrated security = True;");  
-            //}
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"data source=.; initial catalog=FrackHub; integrated security = True;");
+            }
 
-            //base.OnConfiguring(optionsBuilder);
+            base.OnConfiguring(optionsBuilder);
         }
     }
 }
