@@ -5974,28 +5974,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\basha\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\basha\\source\\repos\\FrackerHubProject\\FrackerHub.Repositories\\FrackerHub.Repositories.csproj",
+      "projectUniqueName": "E:\\frackHUB\\FrackerHubProject\\FrackerHub.Repositories\\FrackerHub.Repositories.csproj",
       "projectName": "FrackerHub.Repositories",
-      "projectPath": "C:\\Users\\basha\\source\\repos\\FrackerHubProject\\FrackerHub.Repositories\\FrackerHub.Repositories.csproj",
-      "packagesPath": "C:\\Users\\basha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\basha\\source\\repos\\FrackerHubProject\\FrackerHub.Repositories\\obj\\",
+      "projectPath": "E:\\frackHUB\\FrackerHubProject\\FrackerHub.Repositories\\FrackerHub.Repositories.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "E:\\frackHUB\\FrackerHubProject\\FrackerHub.Repositories\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\basha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6008,8 +6000,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\basha\\source\\repos\\FrackerHubProject\\FrackerHub.Entities\\FrackerHub.Entities.csproj": {
-              "projectPath": "C:\\Users\\basha\\source\\repos\\FrackerHubProject\\FrackerHub.Entities\\FrackerHub.Entities.csproj"
+            "E:\\frackHUB\\FrackerHubProject\\FrackerHub.Entities\\FrackerHub.Entities.csproj": {
+              "projectPath": "E:\\frackHUB\\FrackerHubProject\\FrackerHub.Entities\\FrackerHub.Entities.csproj"
             }
           }
         }
@@ -6058,7 +6050,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
